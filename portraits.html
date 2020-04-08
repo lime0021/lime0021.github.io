@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Lily Mendoza</title>
+  <title>Portraits</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -13,11 +13,19 @@
     height: 200px;
     background: #aaa;
   }
-#title {
+  #text{
+        text-align: left;
+        background-color: white;
+        color: black;
+        font-size: 18px;
+        line-height: 30px;
+        font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+      }
+      #title {
         text-align: center;
         background-color: white;
         color: black;
-        font-size: 20px;
+        font-size: 25px;
         line-height: 35px;
         font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
       }
@@ -26,18 +34,10 @@
 </head>
 <body>
 
-<!--div class="jumbotron text-center" style="margin-bottom:0 ; background-image: url('images/sky.gif'); 
-  background-attachment: fixed;
-  background-size: 50%"-->
-<div class="jumbotron text-center" style="margin-bottom: 0 ; background-color: white">
-  <h1 style="font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;line-height: 60px">LILY MENDOZA</h1>
-  <p>@lil.rosem</p> 
-</div>
-
 
 <!--Navbar -->
 <nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center sticky-top">
-  <a class="navbar-brand" href="index.html"><img src="images/misc/logo_black.jpg" alt="Logo" style="width:40px;"></a>
+  <a class="navbar-brand" href="index.html"><img src="images/misc/logo_white.jpg" alt="Logo" style="width:40px;"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -56,7 +56,6 @@
   </div>  
 </nav>
 
-
 <!--first container -->
 <div class="container" style="margin-top:30px">
   <div class="row justify-content-center">
@@ -64,56 +63,65 @@
    <div class="row">
   <div class="col-md-4">
     <p>
-      <a href="floating.html" target=" "><img src="images/floating/floating.jpg" class="rounded" alt="Floating" style="width:95%">
-      </a>
+      <img src="images/portraits/girl_with_white_hair.jpg" class="rounded" alt="Girl with White Hair" style="width:95%">
+      </p>
+      <p id="text">
+        GIRL WITH WHITE HAIR
+      </p>
+  </div>
+  <div class="col-md-4">
+    <p><img src="images/portraits/hoop_earrings.jpg" class="rounded" alt="Hoop Earrings" style="width:95%"></p>
+    <p id="text">
+      HOOP EARRINGS
     </p>
-  <p id="title"><a href="#" data-toggle="popover" title="FLOATING" data-content="A three series work using glitching." style="text-align: center; color: black; ">FLOATING</a></p>  
-  
-
-<script>
-$(document).ready(function(){
-  $('[data-toggle="popover"]').popover();   
-});
-</script>
-
   </div>
   <div class="col-md-4">
-    <p>
-      <a href="3D.html" target=" "><img src="images/3d/Jack_the_RabBot.jpg" class="rounded" alt="3D" style="width:100%">
-      </a></p>
-      <p id="title">3D</p>
-    </div>
-  <div class="col-md-4">
-    <p>
-      <a href="faces.html" target=" "><img src="images/faces/masks.jpg" class="rounded" alt="Faces" style="width:95%">
-      </a></p>
-      <p id="title">FACES</p>
-  </div>
-  
-  <div class="col-md-4">
-    <p>
-      <a href="portraits.html" target=" "><img src="images/portraits/shadows.jpg" class="rounded" alt= "Portraits" style="width:90%"></a></p>
-      <p id="title">PORTRAITS</p>
-    </div>
-     <div class="col-md-4">
-    <p><a href="RDC_main_page.html" target=" "><img src="images/rdc.png" class="rounded" alt="Misc" style="width:100%"></a></p>
-    <p id="title">RDC WEBPAGE</p>
-
-  </div>
-  <div class="col-md-4">
-    <p>
-      <a href="misc.html" target=" "><img src="images/misc/yinyang.jpg" class="rounded" alt="Misc" style="width:95%">
-      </a>
+    <p><img src="images/portraits/relaxing.jpg" class="rounded" alt="Relaxing" style="width:95%"></p>
+    <p id="text">
+      RELAXING
     </p>
-    <p id="title">MISC</p>
+  </div>
+  <div class="col-md-4">
+    <p><img src="images/portraits/sista_sista.jpg" class="rounded" alt="Sista Sista" style="width:95%"></p>
+    <p id="text">
+      SISTA SISTA BEING SASSY
+    </p>
+  </div>
+  <div class="col-md-4">
+    <p><img src="images/portraits/malicay.jpg" class="rounded" alt="Malicay" style="width:95%"></p>
+    <p id="text">
+      MALICAY STANDING
+    </p>
+  </div>
+  <div class="col-md-4">
+    <p><img src="images/portraits/little_brother.jpg" class="rounded" alt="Little Brother" style="width:95%"></p>
+    <p id="text">
+      LITTLE BROTHER PLAYING VIDEO GAMES
+    </p>
   </div>
 
-</div>
-     
+    <div class="col-md-4">
+    <p><img src="images/portraits/shadows.jpg" class="rounded" alt="Shadows" style="width:95%"></p>
+    <p id="text">
+      SHADOWS
+    </p>
+  </div><div class="col-md-4">
+    <p><img src="images/portraits/self_portrait.jpg" class="rounded" alt="Self Portrait" style="width:95%"></p>
+    <p id="text">
+      SELF PORTRAIT
+    </p>
+  </div><div class="col-md-4">
+    <p><img src="images/portraits/silhouettes.jpg" class="rounded" alt="Silhouettes" style="width:95%"></p>
+    <p id="text">
+      SILHOUETTES
+    </p>
+  </div>
+  </div>
 </div>
 </div>
 <div class="jumbotron text-center" style="margin-bottom:0; background-color: black; color: white">
   <p>Copyright © 2020, Lily Mendoza Official Artist Site</p>
 </div>
+
 </body>
 </html>

@@ -13,12 +13,21 @@
     height: 200px;
     background: #aaa;
   }
-#title {
-        text-align: center;
+  #text{
+        text-align: left;
         background-color: white;
         color: black;
-        font-size: 20px;
-        line-height: 35px;
+        font-size: 15px;
+        line-height: 30px;
+        font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+      }
+  #title{
+        text-align: left;
+        text-decoration: underline;
+        background-color: white;
+        color: black;
+        font-size: 22px;
+        line-height: 30px;
         font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
       }
 
@@ -58,62 +67,27 @@
 
 
 <!--first container -->
-<div class="container" style="margin-top:30px">
-  <div class="row justify-content-center">
-    
-   <div class="row">
-  <div class="col-md-4">
-    <p>
-      <a href="floating.html" target=" "><img src="images/floating/floating.jpg" class="rounded" alt="Floating" style="width:95%">
-      </a>
+<div class="container" style="margin-top:30px; text-align: center;">
+  <p ><img src="images/misc/logo_white.jpg" alt="LOGO" style="width: 50%;"></p>
+  </div>
+  <div class="container" style="width: 60%">
+    <p id="title">
+      CONTACT
     </p>
-  <p id="title"><a href="#" data-toggle="popover" title="FLOATING" data-content="A three series work using glitching." style="text-align: center; color: black; ">FLOATING</a></p>  
-  
+    <p id="text">
+    EMAIL: lilymendoza21@gmail.com
+    <br>
+    INSTAGRAM: @lil.rosem
+    <br>
+    DEVIANTART: lilrosem
 
-<script>
-$(document).ready(function(){
-  $('[data-toggle="popover"]').popover();   
-});
-</script>
+  </p>
 
-  </div>
-  <div class="col-md-4">
-    <p>
-      <a href="3D.html" target=" "><img src="images/3d/Jack_the_RabBot.jpg" class="rounded" alt="3D" style="width:100%">
-      </a></p>
-      <p id="title">3D</p>
-    </div>
-  <div class="col-md-4">
-    <p>
-      <a href="faces.html" target=" "><img src="images/faces/masks.jpg" class="rounded" alt="Faces" style="width:95%">
-      </a></p>
-      <p id="title">FACES</p>
-  </div>
-  
-  <div class="col-md-4">
-    <p>
-      <a href="portraits.html" target=" "><img src="images/portraits/shadows.jpg" class="rounded" alt= "Portraits" style="width:90%"></a></p>
-      <p id="title">PORTRAITS</p>
-    </div>
-     <div class="col-md-4">
-    <p><a href="RDC_main_page.html" target=" "><img src="images/rdc.png" class="rounded" alt="Misc" style="width:100%"></a></p>
-    <p id="title">RDC WEBPAGE</p>
-
-  </div>
-  <div class="col-md-4">
-    <p>
-      <a href="misc.html" target=" "><img src="images/misc/yinyang.jpg" class="rounded" alt="Misc" style="width:95%">
-      </a>
-    </p>
-    <p id="title">MISC</p>
-  </div>
-
-</div>
-     
-</div>
 </div>
 <div class="jumbotron text-center" style="margin-bottom:0; background-color: black; color: white">
   <p>Copyright © 2020, Lily Mendoza Official Artist Site</p>
 </div>
+
+
 </body>
 </html>

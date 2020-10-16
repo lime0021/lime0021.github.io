@@ -21,6 +21,51 @@
         line-height: 35px;
         font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
       }
+   .text
+    { color: white;
+      font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+      font-size: 16px;
+    }
+     .drFlip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 10000px;
+}
+
+.drFlip-box-inner {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.drFlip-box:hover .drFlip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.drFlip-box-front, .drFlip-box-back {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.drFlip-box-front {
+  background-color: transparent;
+  
+}
+
+.drFlip-box-back {
+  background-color: transparent;
+  color: black;
+  transform: rotateY(180deg);
+}
+
 
   </style>
 </head>
@@ -63,35 +108,26 @@
     
    <div class="row">
   <div class="col-md-4">
+    <div class="drFlip-box">
+                <div class="drFlip-box-inner">
+                  <div class="drFlip-box-front">
+                    <img src="images/floating/floating.jpg" style="width: 66%">
+                  </div>
+                  <div class="drFlip-box-back"><p class="text" style="text-align: center; font-size: 30px"> 
+                    These are drawn works consisting of pen, pencil, and other dry media.
+                  </div>
+				</div>
+				</div>
     <p>
-      <a href="drawings.html" target=" "><img src="images/floating/floating.jpg" class="rounded" alt="drawings" style="width:95%">
+      <a href="drawings.html" target=" ">DRAWINGS >>
       </a>
     </p>
    </p>
   <button type="button" class="btn btn-basic btn-lg btn-block" data-toggle="modal" data-target="#drawing" style="color: black; text-decoration: overline;">
-  DRAWINGS
+  DRAWINGS >>
   </button>
 
-  <!-- The Modal -->
-  <div class="modal fade" id="drawingModal">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content-background-dark">  
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title" style="color: white; font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;">DRAWINGS</h4>
-          <button type="button" class="close" style= "color: white" data-dismiss="modal">×</button>
-        </div>   
-        <!-- Modal body -->
-        <div class="modal-body" style="color: white; font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; font-size: 16px">
-          These are drawn works consisting of pen, pencil, and other dry media.
-        <br>
-          Click the image to visit.
-        </div> 
-        <!-- Modal footer -->
-        <div class="modal-footer">
-        <a href="drawings.html" style="color: white;" target=" ">X</a>
-        </div>
-      </div>
+
     </div>
   </div>
   </div>

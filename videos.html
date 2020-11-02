@@ -8,13 +8,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-	
-<style>
+  <style>
   .fakeimg {
     height: 200px;
     background: #aaa;
   }
-#title {
+  #text{
+        text-align: left;
+        background-color: white;
+        color: black;
+        font-size: 15px;
+        line-height: 30px;
+        font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+      }
+      #title {
         text-align: center;
         background-color: white;
         color: black;
@@ -22,55 +29,10 @@
         line-height: 35px;
         font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
       }
-   .text
-    { color: black;
-      font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-    }
-     .drFlip-box {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  border: 1px solid #f1f1f1;
-  perspective: 10000px;
-}
-
-.drFlip-box-inner {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.drFlip-box:hover .drFlip-box-inner {
-  transform: rotateY(180deg);
-}
-
-.drFlip-box-front, .drFlip-box-back {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.drFlip-box-front {
-  background-color: transparent;
-  
-}
-
-.drFlip-box-back {
-  background-color: transparent;
-  color: black;
-  transform: rotateY(180deg);
-}
-
 
   </style>
 </head>
 <body>
-
 <!--div class="jumbotron text-center" style="margin-bottom:0 ; background-image: url('images/sky.gif'); 
   background-attachment: fixed;
   background-size: 50%"-->
@@ -99,77 +61,139 @@
     </ul>
   </div>  
 </nav>
-
-
+  
+  
 <!--first container -->
-<div class="container-fluid" style="margin-top:30px">
-    <div class="row justify-content-center">
-	 <div class="row">
-	    <div class="col justify-content-center">
-		    <div class="container">
-		    <div class="drFlip-box">
-			    <div class="drFlip-box-inner">
-				    <div class="drFlip-box-front">
-					<img class="img-fluid" src="images/videos/lone.png" class="rounded" alt="lone" style="width: 100%;">
-				    </div>
-				    <div class="drFlip-box-back"><p class="text" style="text-align: left; font-size: 15px"> 
-					 "Lone", Digital Video, 57s, 2020
-					 <br><br>
-					 This is a 5-shot film. In this short video, I attempted to explore what it might be like to be the last person on earth. 
-					 I wanted to convey the loneliness and slow disintegrating sanity of that person in 5 shots.
-					    <br><br>
-					    Featuring: Leksi Lincoln
-				    </div>
-			    </div>
-		    </div>
-		    </div>
-		    <p>
-			    <a href="https://youtu.be/17I-i2YlJrU" target=" " style="text-align: center">
-				    <button type="button" class="btn btn-basic btn-lg btn-block" style="color: black;text-decoration: overline;">View "Lone">></button>
-			    </a>
-		    </p>
-	    </div>
-	</div>
-	</div>
-	<div class="row justify-content-center">
-	<div class="row">
-	<div class="col justify-content-center">
-		<div class="container>
-		    <div class="drFlip-box">
-			  <div class="drFlip-box-inner">
-				<div class="drFlip-box-front">
-					<img class="img-fluid" src="images/videos/glitch.png" class="rounded" alt="dancing in the sand" style="width: 100%">
-				</div>
-				  <br>
-				<div class="drFlip-box-back"><p class="text" style="text-align: left; font-size: 15px"> 
-					 "Dancing in the Sand", Digital Video, 57s, 2020
-					<br><br>
-					This is a short glitch video. I took original clips and messed them together to form a continuous dance segment. 
-					<br>This video does not have audio.
-				</div>
-			  </div>
-		    </div>
-		</div>
-		<p>
-			<a href="https://youtu.be/WLF3tHLUX8I" target=" " style="text-align: center">
-				<button type="button" class="btn btn-basic btn-lg btn-block" style="color: black;text-decoration: overline;">
-					View "Dancing in the Sand" >></button>
-			</a>
-		</p>
-	 </div>
-	 </div>
-	</div>
-	<div class="row justify-content-center">
-	<div class="row">
-	 <div class="col justify-content-center">
-		    <div class="container">
-		    <div class="drFlip-box">
-			    <div class="drFlip-box-inner">
-				    <div class="drFlip-box-front">
-					<img class="img-fluid" src="images/videos/yinyang.png" class="rounded" alt="yingyang" style="width: 100%">
-				    </div>
-				    <div class="drFlip-box-back"><p class="text" style="text-align: left; font-size: 15px"> 
-					 "YinYang", Virtual Digital Video Installation, 3m 43s, 2020
+<div class="container-fluid" style="margin-top:90px">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10 justify-content-center">
+        
+        
+<div class="container">
+  <!-- Button to Open the Modal -->
+  <button id="drawing1btn" type="button" class="btn btn-basic" data-toggle="modal" data-target="#drawing1">
+    <img class="img-fluid" src="images/videos/lone.png" alt="Lone" style="width:80%" class="mx-auto d-block">
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="drawing1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+		<iframe width="420" height="315">
+			<src="https://www.youtube.com/embed/17I-i2YlJrU?controls=0&autoplay=1">
+		</iframe>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         <div id="text" style="width:80%" class="mx-auto d-block">
+		"Lone", Digital Video, 57s, 2020
+		<br><br>
+		This is a 5-shot film. In this short video, I attempted to explore what it might be like to be the last person on earth. 
+		I wanted to convey the loneliness and slow disintegrating sanity of that person in 5 shots.
+		<br><br>
+		Featuring: Leksi Lincoln
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">X</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+ </div> 
+</div>
+<div class="col-md-1"></div>
+  </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+        <div class="col justify-content-center">
+          
+          
+ <!-- SHADOW -->
+          <div class="container">
+  <!-- Button to Open the Modal -->
+  <button id="drawing2btn" type="button" class="btn btn-basic" data-toggle="modal" data-target="#drawing2">
+    <img class="img-fluid" src="images/videos/glitch.png" alt="Dancing in the Sand" style="width:80%" class="mx-auto d-block">
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="drawing2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+		<iframe width="420" height="315">
+			<src="https://www.youtube.com/embed/U7XurxQXX4?controls=0&autoplay=1">
+		</iframe>		
+		<iframe width="420" height="315">
+			<src="https://www.youtube.com/embed/XdjL0KzXkXk?controls=0&autoplay=1">
+		</iframe>		
+		<iframe width="420" height="315">
+			<src="https://www.youtube.com/embed/ABd_m2SwpXI?controls=0&autoplay=1">
+		</iframe>		
+		<iframe width="420" height="315">
+			<src="https://www.youtube.com/embed/HO69SdDxius?controls=0&autoplay=1">
+		</iframe>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         <div id="text" style="width:80%" class="mx-auto d-block">
+		"Dancing in the Sand", Digital Video, 57s, 2020
+		<br><br>
+		This is a short glitch video. I took original clips and messed them together to form a continuous dance segment. 
+		<br><br>
+		This video does not have audio.
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">X</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="col-md-1"></div>
+  </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+        <div class="col justify-content-center">
+          
+          
+ <!-- SHADOW -->
+          <div class="container">
+  <!-- Button to Open the Modal -->
+  <button id="drawing2btn" type="button" class="btn btn-basic" data-toggle="modal" data-target="#drawing2">
+    <img class="img-fluid" src="images/videos/yinyang.png" alt="YinYang" style="width:80%" class="mx-auto d-block">
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="drawing2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+		<iframe width="420" height="315">
+			<src="https://www.youtube.com/embed/WLF3tHLUX8Icontrols=0&autoplay=1">
+		</iframe>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         <div id="text" style="width:80%" class="mx-auto d-block">
+		 "YinYang", Virtual Digital Video Installation, 3m 43s, 2020
 					 <br>
 					   <br>
 						I collaborated with <a href="https://mendozariley.github.io/index.html" target=" ">Riley Mendoza</a> for "YinYang." 
@@ -193,21 +217,22 @@
 					   Radio Static - gowlermusic
 					   <br>
 					   Film_Static_04 - JoeDeshon
-				    </div>
-			    </div>
-		    </div>
-			</div>
-		    <p>
-			    
-			    <a href=" " target=" " style="text-align: center">
-				    <button type="button" class="btn btn-basic btn-lg btn-block" style="color: black;text-decoration: overline;">View "YinYang" >></button>
-			    </a>
-		    </p>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">X</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="col-md-1"></div>
+  </div>
+  </div>
 
-	    </div>
-  </div>
-  </div>
-  </div>
+
 
 <div class="jumbotron text-center" style="margin-bottom:0; background-color: black; color: white">
   <p>Copyright © 2020, Lily Mendoza Official Artist Site</p>

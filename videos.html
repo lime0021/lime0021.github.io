@@ -342,26 +342,26 @@
 
 
 	  
-// Get the modal
+ <!-- Get the modal -->
 var yModal = document.getElementById("yinyangModal");
 
-// Get the button that opens the modal
+ <!-- Get the button that opens the modal -->
 var btn = document.getElementById("yBtn");
 
-// Get the <span> element that closes the modal
+ <!-- Get the <span> element that closes the modal -->
 var span = document.getElementsByClassName("yClose")[0];
 
-// When the user clicks on the button, open the modal
+ <!-- When the user clicks on the button, open the modal -->
 btn.onclick = function() {
   yModal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+ <!-- When the user clicks on <span> (x), close the modal -->
 span.onclick = function() {
   yModal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+ <!-- When the user clicks anywhere outside of the modal, close it -->
 window.onclick = function(event) {
   if (event.target == yModal) {
     yModal.style.display = "none";

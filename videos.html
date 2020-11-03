@@ -29,6 +29,87 @@
         line-height: 35px;
         font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
       }
+	  
+	  
+	  
+	  /* The Modal (background) */
+.yModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.yModal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.yClose {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.yClose:hover,
+.yClose:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+	  
+/* Modal Header */
+.yModal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Modal Body */
+.yModal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.yModal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Modal Content */
+.yModal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+	  
+	  
+	  
+	  
+	  
 
   </style>
 </head>
@@ -130,7 +211,7 @@
       <div class="modal-content">
       
         <!-- Modal Header -->
-        <div class="modal-header" style="text-align: center">
+        <div class="modal-header" style="text-align: center;">
 		<iframe width="420" height="315"
 			src="https://www.youtube.com/embed/WLF3tHLUX8I?autoplay=1&mute=1">
 		</iframe>
@@ -255,8 +336,109 @@
   </div>
   </div>
 
+<!-- Trigger/Open The Modal -->
+<button id="yBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="yinyangModal" class="yModal">
+
+  <!-- Modal content -->
+  <div class="yModal-content">
+    <div class="yModal-header">
+    <div id="title" style="width: 100%">
+			Note: Unmute Audio
+		</div>
+			
+		<div class="containter-fluid">
+		<div class="row">
+			<div class="col">
+		<iframe width="210" height="157"
+			src="https://www.youtube.com/embed/YU7XurxQXX4?autoplay=1&mute=1">
+		</iframe>
+			</div>
+			<div class="col">
+		<iframe width="210" height="157"
+			src="https://www.youtube.com/embed/XdjL0KzXkXk?autoplay=1&mute=1">
+		</iframe>
+			</div>
+			</div>
+		<br><br>
+			<div class="row">
+			<div class="col">
+		<iframe width="210" height="157"
+			src="https://www.youtube.com/embed/ABd_m2SwpXI?autoplay=1&mute=1">
+		</iframe>		
+		<iframe width="210" height="157"
+			src="https://www.youtube.com/embed/HO69SdDxius?autoplay=1&mute=1">
+		</iframe>
+			</div>
+			</div>
+		</div>
+  </div>
+<div class="yModal-body">
+   <div id="text" style="width:80%" class="mx-auto d-block">
+		 "YinYang", Virtual Digital Video Installation, 3m 43s, 2020
+					 <br>
+					   <br>
+						I collaborated with <a href="https://mendozariley.github.io/index.html" target=" ">Riley Mendoza</a> for "YinYang." 
+					   This piece is inspired by the complementary relationship between light and darkness. 
+					  The video pivots between two characters living in two different worlds, one representing light and the other representing darkness. 
+					   I took on the world of light and focused my attention on the natural world, youth, and laughter. 
+					   Throughout the video using glitching and parallels to emphasize the contrast betweeen the two characters. 
+					   This collection of four short films are meant to be projected simultaneously on the four walls of a room. 
+					   We wanted to immerse the viewer in the two realms that we created, so they can experience the light and dark closely, without escape.
+					   <br>
+					   <br>
+					   Featuring: Leksi Lincoln, Lanie Lincoln, and Gabe Mendoza
+					   <br>
+					   <br>
+					   Music:
+					   <br>
+					   Willow Trees - Adobe Stock
+					   <br>
+					   Apocalypse - Adobe Stock
+					   <br>
+					   Radio Static - gowlermusic
+					   <br>
+					   Film_Static_04 - JoeDeshon
+		 </div>
+  </div>
+ <div class="yModal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">X</button>
+  </div>	  
+	  
+</div>	
 
 
+	  
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+	
+	
+	
 <div class="jumbotron text-center" style="margin-bottom:0; background-color: black; color: white">
   <p>Copyright © 2020, Lily Mendoza Official Artist Site</p>
 </div>

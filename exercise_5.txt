@@ -1,0 +1,114 @@
+Ducks duck1;
+Ducks duck2;
+
+void setup(){
+ size(1300, 700);
+ duck1 = new Ducks("QUACK", random(0, width), random(50, height/2));
+ duck2 = new Ducks("BARK", random(0, width), random(50, height/2));
+
+}
+
+void draw() {
+  // drawing pong
+  int opac = 15;
+  color bg = color(102, 153, 255);
+  background(bg);
+  for (int i = 0; i < 255; i++) {
+     pond(color(255, opac), 20*i);
+     opac --;
+  }
+  
+  // leaves silhouette
+  PImage leaves = loadImage("Leaves.png");
+  image(leaves, 0, 0, width, height);
+  
+  
+  // draw ducks
+  duck1.drift();
+  duck2.drift();
+  if (keyPressed && key == 'q' || key == 'Q')  {
+    duck1.quack();
+    duck2.quack();
+    }
+  if (mousePressed == true) {
+    duck1.poop(color(204, 102, 0));
+    duck2.poop(color(153, 51, 0));
+  }
+  
+  
+}
+
+void pond(color k, int posx) {
+  noStroke();
+  fill(k);
+  ellipse(width/2, height/2, (2* posx) + 1000, posx + 500);
+}
+
+
+
+class Ducks {
+  float x;
+  float y;
+  float w;
+  float h;
+  String says;
+  float speed;
+  
+  
+  Ducks(String quote, float xpos, float ypos) {
+    w = ypos * 1.2;
+    h = ypos;
+    x = xpos;
+    y = ypos;
+    speed = random(2,5);
+    says = quote;
+  }
+  
+  void foDuck() {
+    PImage duck = loadImage("duck.png");
+    image(duck, x, y, w, h);
+  }
+  
+  void baDuck() {
+    PImage duck2 = loadImage("duck2.png");
+    image(duck2, x, y, w, h);
+   }
+ 
+  void drift() {
+    if (speed < 0)
+    foDuck();
+    else if (speed > 0)
+    baDuck();
+    x += speed;
+        if (x <=0 ) {
+          baDuck();
+          speed = -speed;
+        }
+        else if (x >= width) {
+          foDuck();
+          speed = -speed;
+     
+        }
+   
+      y+= random (-1,1);
+
+  }
+  
+  void poop(color c) {
+    float pw = 1.5 * w;
+    fill(c);
+    if (speed < 0) {
+    ellipse(pw + x, (h/2) + y, w/8, w/8);
+    ellipse((pw/10) + pw + x , (h/2) + y, w/10, w/10);
+    } else if (speed > 0)
+    ellipse(x, (h/2) + y, w/8, w/8);
+    ellipse(-(pw/10) + x, (h/2) + y, w/10, w/10);
+  }
+  
+  void quack() {
+    fill(0);
+    text(says, x - 20, y - 20);
+  }
+  
+  
+}

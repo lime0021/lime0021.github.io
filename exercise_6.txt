@@ -1,0 +1,142 @@
+var currentkey = '1';
+
+var bgc;
+
+var guide = "1 : Duck\n2 : Crown\n3 : Double Horizontal Lines\n4 : Purple Building\n"
++ "5 : Blue Building\n6 : Window\n7 : Big Duck\n0 : Eraser\n";
+
+function setup() {
+bgc = color(0);
+createCanvas(1100, 600);
+background(0);
+smooth();
+}
+
+function draw() {
+
+// triggering the clear_print function
+if(keyIsDown()) {
+clear_print();
+console.log(guide);
+}
+// triggering the newkeychoice
+if(mouseIsPressed)
+drawChoice();
+}
+
+
+function drawChoice() {
+  // the key mapping if statemens that you can change to do anything you want.
+  // just make sure each key option has the a stroke or fill and then what type of
+  // graphic function
+
+
+ // key global variable contains whatever key was last pressed
+ var currentkey = key;
+
+switch(currentkey) {
+case '1':
+  console.log("Duck");  // small duck
+  drawDuck(color(245, 211, 0), mouseX, mouseY);
+  break;
+case '2':
+  console.log("Crown");  // crown
+  drawCrown(color(254, 83, 187), mouseX, mouseY);
+  break;
+case '3':
+  console.log("Double Line");  // double white horizontal lines
+  drawLines(color(255), mouseX, mouseY, pmouseX, pmouseY);
+  break;
+case '4':
+  console.log("Purple Building");  // purple building
+  drawBuild(mouseX, mouseY);
+  break;
+case '5':
+  console.log("Window");  // window
+  drawWindow(color(51, 204, 255), mouseX, mouseY);
+  break;
+case '6':
+  console.log("Big Duck");  // big yellow duck
+  scale(2);
+  drawDuck(color(245, 211, 0), mouseX - 300, mouseY - 100);
+  break;
+case '0':
+  console.log("Eraser");  // erase with bg color
+  eraser(bgc, mouseX, mouseY,25);
+  break;
+default:             // Default executes if the case labels
+  console.log("None");   // don't match the switch parameter
+  break;
+}
+
+}
+
+function drawDuck(k, lx, ly) {
+  noStroke();
+  fill(k);
+  ellipse(lx,ly,50,50);
+  ellipse(lx + 20, ly + 40, 100, 55);
+  triangle(lx-40,ly, lx-10, ly +15, lx - 10, ly-15);
+  triangle(lx+74,ly+10, lx+20, ly +40, lx +70,ly+40);
+}
+
+function drawCrown(k, lx, ly) {
+  noStroke();
+  fill(k);
+  rect(lx - 40, ly - 20, 40, 20);
+  triangle(lx - 40, ly - 20,  lx - 50, ly - 30, lx - 20, ly - 20);
+  triangle(lx - 30, ly - 20, lx-20, ly - 38, lx - 10, ly - 20);
+  triangle(lx - 20, ly - 20, lx + 10, ly-30, lx, ly -20);
+}
+
+
+
+
+function drawLines( k, lx, ly, px, py) {
+ strokeWeight(1);
+  stroke(k);
+  line(lx, ly, px, py);
+  line(lx, ly+60, px, py+60);
+}
+
+
+function drawBuild(lx, ly) {
+  noStroke();
+  let colr1 = [255,233,68,4];
+  let colr2 = [32,46,11,0];
+  let colr3 = [112,251,212,94];
+  var r = Math.round(random(3));
+  var rand = random(300);
+  fill(colr1[r], colr2[r], colr3[r]);
+  rect(lx - 100, ly - rand, 100, rand);
+}
+
+function drawWindow(k, lx, ly) {
+  noStroke();
+  fill(k);
+  rect(lx - 25, ly - 25, 25,25);
+}
+
+
+function eraser(k, lx, ly, sz) {
+  stroke(k);
+  fill(k);
+  rect(lx, ly, sz,sz);
+}
+
+
+function clear_print() {
+
+// these 2 options let you choose between clearing the background
+// and saveing the current image as a file.
+  if (key == 'x' || key == 'X') {
+     background(0);
+  } else if (key == 'p' || key == 'P') {
+     saveFrame("x_xxx_####.png");
+     //this will save the name as the intials and a random counting number.
+     // it will always be larger in value then the last one.
+     delay(500);
+  }
+
+
+}

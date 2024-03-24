@@ -29,53 +29,11 @@
         line-height: 35px;
         font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
       }
-                 .drFlip-box {
-  background-color: transparent;
-  width: 100%;
-  height: 800px;
-  border: 1px solid #f1f1f1;
-  perspective: 10000px;
-}
-
-.drFlip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.drFlip-box:hover .drFlip-box-inner {
-  transform: rotateY(180deg);
-}
-
-.drFlip-box-front, .drFlip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-	text-align: center;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.drFlip-box-front {
-  background-color: transparent;
-  
-}
-
-.drFlip-box-back {
-  background-color: transparent;
-  color: black;
-  transform: rotateY(180deg);
-}
 
   </style>
 </head>
 <body>
-<!--div class="jumbotron text-center" style="margin-bottom:0 ; background-image: url('images/sky.gif'); 
-  background-attachment: fixed;
-  background-size: 50%"-->
+
 <div class="jumbotron text-center" style="margin-bottom: 0 ; background-color: white">
   <h1 style="font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;line-height: 60px">LILY MENDOZA</h1>
   <p>Creative Coding</p> 
@@ -83,7 +41,7 @@
 
 <!--Navbar -->
 <nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center sticky-top">
-  <a class="navbar-brand" href="index.html"><img src="images/misc/logo_black.jpg" alt="Logo" style="width:40px;"></a>
+  <a class="navbar-brand" href="index.html"><img src="images/logo/logo_black.JPG" alt="Logo" style="width:40px;"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -102,145 +60,55 @@
   
 <!--first container -->
 <div class="container-fluid" style="margin-top:90px">
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-	     <p>
-			    
-			    <a href="RDC_main_page.html" target=" " style="text-align: center">
-				    <button type="button" class="btn btn-basic btn-lg btn-block" style="color: black;text-decoration: overline;">RDC Website >></button>
-			    </a>
-		    </p>
-  <div class="drFlip-box">
-			    <div class="drFlip-box-inner">
-				    <div class="drFlip-box-front">
-					<img class="img-fluid" src="images/rdc.png" class="rounded" alt="RDC" style="width: 90%;">
-				    </div>
-				    <div class="drFlip-box-back"><p class="text" style="text-align: center; font-size: 20px"> 
-					 <div id="title" style="width:75%" class="mx-auto d-block">
-            <a href="RDC_main_page.html" target=" " style="color: black">"RDC"</a>, HTML website, 2020
-            <br><br>
-            This is a site designed for a fiction club called RDC. It is based on avatars from a virtual chat game. 
-            The site introduces the main members of the group and allows the user to join. All graphics, excluding gif images, are original drawings.
-          </div>
-				    </div>
-			    </div>
-		    </div>
-		  
-	    </div>
-  <div class="col-md-2">
-  </div>
-  </div>
-	
-	
-	 <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-	     <div>
-		     <p>
-			    
-			    <a href="images/videos/exercise_5.html" target=" " style="text-align: center">
-				    <button type="button" class="btn btn-basic btn-lg btn-block" style="color: black;text-decoration: overline;">Pond Project >></button>
-			    </a>
-		    </p>
-	    </div>
-  <div class="drFlip-box">
-			    <div class="drFlip-box-inner">
-				    <div class="drFlip-box-front">
-					<img class="img-fluid" src="images/html/duck.png" class="rounded" alt="Duck" style="width: 90%;">
-				    </div>
-				    <div class="drFlip-box-back"><p class="text" style="text-align: center; font-size: 20px"> 
-					 <div id="title" style="width:75%" class="mx-auto d-block">
-            <a href="images/html/duck.png" target=" " style="color: black">"Pond"</a>, Java, 2021
+	<div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+		    <img class="img-fluid" src="images/createcoding/duck.PNG" class="rounded" alt="Duck" style="width: 90%;">
+	        "Pond", Java, 2021
             <br><br>
             I worked with classes and arrays in Java to create a few cute ducks that drift through a pond.
-						 <br><br>
-						 <a href= "images/videos/exercise_5.mp4" target = " " style="color: black"> See Video >> </a>
-						 <br>
-						 <a href = "exercise_5.txt" target = " " style="color: black"> See Code>> </a>
-          </div>
-				    </div>
-			    </div>
-  </div>
-</div>
-  <div class="col-md-2">
-  </div>
-  </div>
-
-	
-	 <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-	    <div>
-		     <p>
-			    
-			    <a href="p5_source_f20/ex6/index.html" target=" " style="text-align: center">
-				    <button type="button" class="btn btn-basic btn-lg btn-block" style="color: black;text-decoration: overline;">Ducky Drawing Application >></button>
-			    </a>
-		    </p>
-	    </div>
-  <div class="drFlip-box">
-			    <div class="drFlip-box-inner">
-				    <div class="drFlip-box-front">
-					<img class="img-fluid" src="images/html/example1.png" class="rounded" alt="DrawingPad" style="width: 90%;">
-				    </div>
-				    <div class="drFlip-box-back"><p class="text" style="text-align: center; font-size: 20px"> 
-					 <div id="title" style="width:75%" class="mx-auto d-block">
-            <a href="p5_source_f20/ex6/index.html" target=" " style="color: black">"Drawing Application"</a>, P5, 2021
+		    <br><br>
+		    <a href= "images/videos/exercise_5.mp4" target = " " style="color: black"> [See Video.] </a>			
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+			<img class="img-fluid" src="images/createcoding/example1.PNG" class="rounded" alt="DrawingPad" style="width: 90%;">
+            "Drawing Application", P5, 2021
             <br><br>
-            This is a drawing application.
-						 <br><br>
-		<a href = "images/html/example1.png" target=" " style="color: black"> Example 1 </a><br>
-		<a href = "images/html/example2png" target=" " style="color: black"> Example 2 </a><br>
-		<a href = "images/html/example3png" target=" " style="color: black"> Example 3</a><br><br>
-		To try, click <a href = "p5_source_f20/ex6/index.html" target= " " style="color: black" >here</a>.
-						 <a href = "exercise_6.txt" target= " " style="color: black"> See Code >> </a>
-          </div>
-				    </div>
-			    </div>
-  </div>
-	     
-</div>
-  <div class="col-md-2">
-  </div>
-  </div>	
-	
-	
-
-        <div class="row">
-		 <div class="col-md-2">
-  </div>
+            This is a drawing application, that utilizes geometric shapes and random color value.
+            <br><br>
+            <a href="p5_source_f20/ex6/index.html" target=" " style="text-align: center">
+				<button type="button" class="btn btn-basic btn-lg btn-block" style="color: black;text-decoration: overline;">[Try Application.]</button>
+			</a>
+			<br><br>
+		    <a href = "images/createcoding/example1.PNG" target=" " style="color: black"> Example 1 </a><br>
+		    <a href = "images/createcoding/example2.PNG" target=" " style="color: black"> Example 2 </a><br>
+		    <a href = "images/createcoding/example3.PNG" target=" " style="color: black"> Example 3 </a>
+            <br><br>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+		<div class="col-md-2"></div>
         <div class="col-md-8 justify-content-center">
-		<p>
-			    
-			    <a href="https://lime0021.github.io/AlarconBeachHouse/" target=" " style="text-align: center">
-				    <button type="button" class="btn btn-basic btn-lg btn-block" style="color: black;text-decoration: overline;">Alarcon Beach House Game >></button>
-			    </a>
-		    </p>
-          <div class="drFlip-box">
-			    <div class="drFlip-box-inner">
-				    <div class="drFlip-box-front">
-					<img class="img-fluid" src="images/html/game.png" class="rounded" alt="Alarcon Beach House" style="width: 90%;">
-				    </div>
-				    <div class="drFlip-box-back"><p class="text" style="text-align: center; font-size: 20px"> 
-					 <div id="title" style="width:75%" class="mx-auto d-block">
-          <a href="https://lime0021.github.io/AlarconBeachHouse/" target=" " style="color: black">"Alarcon Beach House"</a>, HTML game, 2020
-          <br><br>
-          This is an in-progress text-based murder mystery game. 
-          <br><br>
-          Graphic: Photoshopped Sims 4 screenshots
-          <br>
-          Music: 
-          </div>
-				    </div>
-			    </div>
-		    </div>
-		    
-	    </div>
-  <div class="col-md-2">
-  </div>
-  </div>
-  </div>
+			<img class="img-fluid" src="images/createcoding/game.PNG" class="rounded" alt="Alarcon Beach House" style="width: 90%;">
+		<div id="title" style="width:75%" class="mx-auto d-block">
+            "Alarcon Beach House", HTML game, 2020
+            <br><br>
+            This is an in-progress text-based murder mystery game. 
+            <br><br>
+            Graphic: Photoshopped Sims 4 screenshots
+            <br><br>
+            Music: 
+            <br><br>
+            <a href="https://lime0021.github.io/AlarconBeachHouse/" target=" " style="color: black">[Play Game.]</a>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
           
 
 <div class="jumbotron text-center" style="margin-bottom:0; background-color: black; color: white">

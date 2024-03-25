@@ -15,17 +15,17 @@
   }
   #text{
         text-align: left;
-        background-color: white;
-        color: black;
-        font-size: 15px;
+        background-color: none;
+        color: white;
+        font-size: 20px;
         line-height: 30px;
         font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
       }
-      #title {
+    #title {
         text-align: center;
-        background-color: white;
-        color: black;
-        font-size: 20px;
+        background-color: none;
+        color: white;
+        font-size: 35px;
         line-height: 35px;
         font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
       }
@@ -59,54 +59,68 @@
   
   
 <!--first container -->
-<div class="container-fluid" style="margin-top:90px">
+<div class="container-fluid" style="margin-top:5%; margin-bottom: 5%">
 	<div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-		    <img class="img-fluid" src="images/createcoding/duck.PNG" class="rounded" alt="Duck" style="width: 90%;">
-	        "Pond", Java, 2021
-            <br><br>
-            I worked with classes and arrays in Java to create a few cute ducks that drift through a pond.
-		    <br><br>
-		    <a href= "images/videos/exercise_5.mp4" target = " " style="color: black"> [See Video.] </a>			
+        <div class="col-md-3 justify-content-left" style="background-color: black">
+            <a id="title"> 
+                <em>Pond</em>, Java, 2021 
+            </a>
         </div>
-        <div class="col-md-2"></div>
+        <div class="col-md-6 justify-content-center">
+             <img class="img-fluid" src="images/createcoding/duck.PNG" class="rounded" alt="Duck" style="width: 90%;">
+		    <br><br>
+		    <a href= "images/videos/exercise_5.mp4" target = " " style="color: black; font-size: 20px "> [See Video.] </a>			
+        </div>
+        <div class="col-md-3 justify-content-center">
+            <a id="text"> 
+                I worked with classes and arrays in Java to create a few cute ducks that drift through a pond.
+            </a>
+        </div>
     </div>
     <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
+         <div class="col-md-3 justify-content-left" style="background-color: black">
+            <a id="title">  
+                <em>Drawing Application</em>, P5, 2021
+            </a>
+        </div>
+        <div class="col-md-6 justify-content-center">
 			<img class="img-fluid" src="images/createcoding/example1.PNG" class="rounded" alt="DrawingPad" style="width: 90%;">
-            "Drawing Application", P5, 2021
-            <br><br>
-            This is a drawing application, that utilizes geometric shapes and random color value.
             <br><br>
             <a href="p5_source_f20/ex6/index.html" target=" " style="text-align: center">
-				<button type="button" class="btn btn-basic btn-lg btn-block" style="color: black;text-decoration: overline;">[Try Application.]</button>
+				<button type="button" class="btn btn-basic btn-lg btn-block" style="color: black;text-decoration: overline;"><strong>Try Application</strong></button>
 			</a>
-			<br><br>
-		    <a href = "images/createcoding/example1.PNG" target=" " style="color: black"> Example 1 </a><br>
-		    <a href = "images/createcoding/example2.PNG" target=" " style="color: black"> Example 2 </a><br>
-		    <a href = "images/createcoding/example3.PNG" target=" " style="color: black"> Example 3 </a>
-            <br><br>
         </div>
-        <div class="col-md-2"></div>
+        <div class="col-md-3 justify-content-center">
+            <a id="text">
+                This is a drawing application, that utilizes geometric shapes and random color value.
+                <br><br>
+                <button type="button" class="btn btn-basic btn-lg btn-block" style="color: black;text-decoration: overline;"><strong> See Examples </strong></button>
+		        <a href = "images/createcoding/example1.PNG" target=" " style="color: black"> Example 1 </a><br>
+		        <a href = "images/createcoding/example2.PNG" target=" " style="color: black"> Example 2 </a><br>
+		        <a href = "images/createcoding/example3.PNG" target=" " style="color: black"> Example 3 </a>
+            </a>
+        </div>
     </div>
     <div class="row">
-		<div class="col-md-2"></div>
+		<div class="col-md-3 justify-content-left" style="background-color: black">
+            <a id="title">  
+                <em>Alarcon Beach House</em>, HTML game, 2020
+            </a>
+        </div>
         <div class="col-md-8 justify-content-center">
 			<img class="img-fluid" src="images/createcoding/game.PNG" class="rounded" alt="Alarcon Beach House" style="width: 90%;">
-		<div id="title" style="width:75%" class="mx-auto d-block">
-            "Alarcon Beach House", HTML game, 2020
             <br><br>
-            This is an in-progress text-based murder mystery game. 
-            <br><br>
-            Graphic: Photoshopped Sims 4 screenshots
-            <br><br>
-            Music: 
-            <br><br>
-            <a href="https://lime0021.github.io/AlarconBeachHouse/" target=" " style="color: black">[Play Game.]</a>
+            <a href="https://lime0021.github.io/AlarconBeachHouse/" target=" " style="color: black"><strong>Play Game</strong></a>
         </div>
-        <div class="col-md-2"></div>
+        <div class="col-md-3 justify-content-center">
+            <a id="text">
+                 This is an in-progress text-based murder mystery game. 
+                <br><br>
+                Graphic: Photoshopped Sims 4 screenshots
+                <br><br>
+                Music: 
+            </a>
+        </div>
     </div>
 </div>
           

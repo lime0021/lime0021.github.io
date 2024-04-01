@@ -108,14 +108,37 @@
             <a href="p5_source_f20/ex6/index.html" target=" " style="text-align: center">
 				<button type="button" class="btn btn-basic btn-lg btn-block" style="color: black;text-decoration: overline;"><strong>Try Application</strong></button>
 			</a>
-            <a href="p5_source_f20/ex6/index.html" target=" " style="text-align: center">
-                <button type="button" class="btn btn-basic btn-lg btn-block" style="color: black;text-decoration: overline;"><strong> See Examples </strong></button>
-            </a>
-             <!--
-		        <a href = "images/createcoding/example1.PNG" target=" " style="color: black"> Example 1 </a><br>
-		        <a href = "images/createcoding/example2.PNG" target=" " style="color: black"> Example 2 </a><br>
-		        <a href = "images/createcoding/example3.PNG" target=" " style="color: black"> Example 3 </a>
-                -->
+            <div class="container">
+                <!-- Button to Open the Modal -->
+                <button id="exbtn" type="button" class="btn btn-basic btn-lg btn-block" style="color: black;text-decoration: overline;" data-toggle="modal" data-target="#examples">
+                    <strong> See Examples </strong>
+                </button>
+                <!-- The Modal -->
+                <div class="modal fade" id="examples">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header" style="text-align: center">
+                                <a class="title">
+                                    Examples
+                                </a>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <img class="img-fluid" src="images/createcoding/example1.PNG"  alt="Example1" style="width: 100%; border-radius: 1%;">
+                                <br><br>
+                                <img class="img-fluid" src="images/createcoding/example2.PNG"  alt="Example2" style="width: 100%; border-radius: 1%;">
+                                <br><br>
+                                <img class="img-fluid" src="images/createcoding/example3.PNG"  alt="Example3" style="width: 100%; border-radius: 1%;">
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">&times;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
         </div>
         <div class="col-md-3 justify-content-right" style="background-color: black">
             <div class="center">
